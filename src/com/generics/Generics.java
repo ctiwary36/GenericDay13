@@ -10,8 +10,8 @@ public class Generics<T extends Comparable<T>> {
         }
         System.out.println("maximum value is " + max);
         return max;
-
     }
+
     public static void main(String[] args) {
         System.out.println("=======welcome to generics code tested By JUnit===== ");
 
