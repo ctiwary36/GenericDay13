@@ -29,4 +29,18 @@ class GenericsTest {
         float floatResult3 = generics.maxValueFloat(3.5f,2.7f,4.5f);
         assertEquals(4.5f,floatResult3);
     }
+
+    @Test
+    void maxString() {
+        String str1="Hii", str2 = "Hii Chandan" , str3 = "Hii Chandan How are you";
+
+        String stringResult1 = generics.maxString(str3,str2,str1);
+        assertEquals(str3,stringResult1);
+
+        String stringResult2 = generics.maxString(str2,str3,str1);
+        assertEquals(str3,stringResult2);
+
+        String stringResult3 = generics.maxString(str1,str2,str3);
+        assertEquals(str3,stringResult3);
+    }
 }
